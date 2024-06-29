@@ -33,7 +33,7 @@ section.container {
     width: 53.5vw;
     margin: auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     padding-top: 5px;
 }
 
