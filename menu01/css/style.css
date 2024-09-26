@@ -44,7 +44,7 @@ nav a {
 }
 
 .hero {
-    background-image: url(/menu01/img-desktop.jpg);
+    background-image: url(#);
     background-position: center bottom;
     height: 200px;
     display: flex;
@@ -62,12 +62,10 @@ nav a {
 }
 
 .menu {
-    width: 768px;
     padding: 20px;
     margin: auto;
     background-color: rgb(71, 31, 31);
     color: black;
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -128,7 +126,7 @@ nav {
     margin-top: 10px;
 }
 
-/* Media Queries para telas maiores */
+
 @media (min-width: 768px) {
     header {
         flex-direction: row;
@@ -153,7 +151,13 @@ nav {
     }
 
     .menu {
+        width: 768px;
         padding: 50px;
+        margin: auto;
+        background-color: rgb(71, 31, 31);
+        color: black;
+        border-radius: 10px;
+        text-align: center;
     }
 
     footer {
