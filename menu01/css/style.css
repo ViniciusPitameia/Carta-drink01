@@ -33,7 +33,7 @@ nav a {
     color: #ffffff;
 }
 
-.reserve-button {
+.botao-reserva {
     background-color: #c9a434;
     color: #fff;
     border: none;
@@ -45,7 +45,6 @@ nav a {
 
 .hero {
     background-image: url(#);
-    background-position: center bottom;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -69,11 +68,15 @@ nav a {
     text-align: center;
 }
 
-.category {
+.categoria {
     margin-bottom: 20px;
 }
 
-.dish {
+#opcoes-bar {
+    padding: 30px auto 10px auto;
+}
+
+.cocktail {
     background-color: #ffffffab;
     padding: 15px;
     border-radius: 5px;
@@ -91,24 +94,8 @@ footer {
     margin-top: 50px;
 }
 
-.social-media a {
+.midia-social a {
     margin-right: 15px;
-}
-
-.newsletter input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.newsletter button {
-    background-color: #c2b280;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 nav {
@@ -164,10 +151,5 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 50px;
-    }
-
-    .newsletter {
-        flex: 1;
-        text-align: center;
     }
 }
