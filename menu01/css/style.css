@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a0404;
+    color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #3f3f3f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.reserve-button {
+    background-color: #c9a434;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hero {
+    background-image: url(/menu01/img-desktop.jpg);
+    background-position: center bottom;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.575);
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 24px;
+}
+
+.menu {
+    width: 768px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(71, 31, 31);
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.dish {
+    background-color: #ffffffab;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.social-media a {
+    margin-right: 15px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    background-color: #c2b280;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+.menu-toggle {
+    display: block; 
+    background-color: #c2b280;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    nav {
+        display: block; 
+    }
+
+    .menu-toggle {
+        display: none; 
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .menu {
+        padding: 50px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .newsletter {
+        flex: 1;
+        text-align: center;
+    }
+}
