@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f9d65e; /* Dourado */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.drink {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    filter: brightness(80%);
+}
+
+p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(249, 214, 94, 0.8); /* Dourado claro */
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(249, 214, 94, 1);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}

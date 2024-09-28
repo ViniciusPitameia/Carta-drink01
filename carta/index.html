@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carta de Drinks</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Carta de Drinks</h1>
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="drink active" id="negroni">
+                    <img src="img/negroni.jpg" alt="Drink 1">
+                    <p><strong>Negroni:</strong> Gin, Campari, Vermute Rosso e Zest de laranja</p>
+                </div>
+                <div class="drink" id="manhattan">
+                    <img src="img/manhatan.jpg" alt="Drink 2">
+                    <p><strong>Manhatan:</strong> Whiskey Rye, Vermute Rosso, Angostura e Cereja no palito</p>
+                </div>
+                <div class="drink" id="gin-tonic">
+                    <img src="img/gin-tonic.jpg" alt="Drink 3">
+                    <p><strong>Gin Tonic:</strong> Gin, Água tonica, especiarias a sua escolha</p>
+                </div>
+                <div class="drink" id="aperol-spritz">
+                    <img src="img/aperol.jpg" alt="Drink 4">
+                    <p><strong>Aperol Spritz:</strong> Aperol, Espumante Brut, Água com gás e meia lua de laranja</p>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
