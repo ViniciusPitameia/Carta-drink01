@@ -7,7 +7,27 @@ function changeSlide(direction) {
     slides[currentSlide].classList.add('active');
 
     const offset = -currentSlide * 100;
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    document.querySelector('.carrossel-imagens').style.transform = `translateX(${offset}%)`;
 }
 
-document.querySelectorAll('.slide')[currentSlide].classList.add('active');
+function toggleMenu() {
+    const listaDrinks = document.querySelector('.lista-drinks');
+    listaDrinks.style.display = (listaDrinks.style.display === 'block') ? 'none' : 'block';
+}
+
+
+function goToSlide(drinkId) {
+    const slides = document.querySelectorAll('.drink');
+    const index = Array.from(slides).findIndex(slide => slide.id === drinkId);
+    
+    if (index !== -1) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+
+        const offset = -currentSlide * 100;
+        document.querySelector('.carrossel-imagens').style.transform = `translateX(${offset}%)`;
+    }
+}
+
+document.querySelectorAll('.drink')[currentSlide].classList.add('active');
