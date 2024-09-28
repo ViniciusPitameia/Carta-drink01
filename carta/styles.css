@@ -23,14 +23,14 @@ h1 {
     color: #f9d65e; /* Dourado */
 }
 
-.carousel {
+.carrossel {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-images {
+.carrossel-imagens {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -77,10 +77,10 @@ button:hover {
     background-color: rgba(249, 214, 94, 1);
 }
 
-.prev {
+.anterior {
     left: 15px;
 }
 
-.next {
+.proximo {
     right: 15px;
 }
