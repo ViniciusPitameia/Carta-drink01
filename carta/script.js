@@ -11,8 +11,8 @@ function changeSlide(direction) {
 }
 
 function toggleMenu() {
-    const listaDrinks = document.querySelector('.lista-drinks');
-    listaDrinks.style.display = (listaDrinks.style.display === 'block') ? 'none' : 'block';
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.style.display = (searchBar.style.display === 'block') ? 'none' : 'block';
 }
 
 

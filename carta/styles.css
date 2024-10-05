@@ -86,9 +86,9 @@ button:hover {
     right: 10px; 
 }
 
-/* Estilos para a lista de drinks */
+
 .lista-drinks {
-    display: none; /* Ocultar por padrão */
+    display: none; 
     margin-top: 20px;
 }
 
@@ -103,7 +103,20 @@ button:hover {
     margin-bottom: 20px;
 }
 
-/* Media Queries */
+
+.search-bar {
+    display: none; 
+    margin-top: 10px;
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
 @media (min-width: 600px) {
     .container {
         padding: 40px;
@@ -134,14 +147,13 @@ button:hover {
         right: 15px;
     }
 
-    /* Exibir a lista em telas maiores */
+    
     .lista-drinks {
-        display: block; /* Exibir por padrão */
+        display: block; 
     }
-}
 
-@media (min-width: 900px) {
-    .container {
-        max-width: 900px;
+    .search-bar {
+        display: block; 
+        margin-top: 20px;
     }
 }
